@@ -2,19 +2,35 @@
 //  MainCoordinator.swift
 //  Peptobismol
 //
-//  Created by Pedro Ésli Vieira do Nascimento on 23/02/22.
-//
+
 
 import SwiftUI
 
-protocol Coordinator{
-    func buildView() -> AnyView
-}
+final class MainCoordinator: ObservableObject, Coordinator {
+	var creators: [ViewCreator]
 
-class MainCoordinator: Coordinator {
-    
-    func buildView() -> AnyView {
-        return AnyView(TimerView())
-    }
-    
+	init(creators: [ViewCreator]) {
+		self.creators = creators
+	}
+	
+	func start() {
+		
+	}
+	
+//	func createMainView() -> AnyView {
+//
+//	}
+//
+//	func createSoundPickerView() -> AnyView {
+//
+//	}
+//	
+//	func createTimerView() -> AnyView {
+//
+//	}
+//
+//	func createTimePickerView() -> AnyView {
+//
+//	}
+	
 }
