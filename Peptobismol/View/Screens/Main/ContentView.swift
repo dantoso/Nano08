@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let coordinator = MainCoordinator()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            NavigationLink("Timer View") {
+                coordinator.buildView()
+            }
+            NavigationLink("Timer View") {
+                coordinator.buildView()
+            }
+        }
     }
 }
 
