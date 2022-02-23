@@ -11,7 +11,8 @@ import SwiftUI
 struct PeptobismolApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+//				.environmentObject(MainCoordinator(creators: <#T##[ViewCreator]#>))
         }
     }
 }

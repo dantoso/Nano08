@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-class ContentViewModel: ObservableObject{
+class MainViewModel: ObservableObject{
     
 }

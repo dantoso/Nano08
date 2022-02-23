@@ -8,29 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		379F581427C6A8A000F315DD /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581327C6A8A000F315DD /* TimerViewModel.swift */; };
-		379F581727C6B4D100F315DD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581627C6B4D100F315DD /* MainCoordinator.swift */; };
 		37DBC4A127C6A6EB004770BE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A027C6A6EB004770BE /* ContentViewModel.swift */; };
+		37DBC4A127C6A6EB004770BE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A027C6A6EB004770BE /* MainViewModel.swift */; };
 		37DBC4A427C6A793004770BE /* SharedTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A327C6A793004770BE /* SharedTemp.swift */; };
 		37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A527C6A79E004770BE /* ModelTemp.swift */; };
 		37DBC4A927C6A806004770BE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A827C6A806004770BE /* TimerView.swift */; };
 		FB6414AF27C578E60029B7F7 /* PeptobismolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */; };
-		FB6414B127C578E60029B7F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6414B027C578E60029B7F7 /* ContentView.swift */; };
+		FB6414B127C578E60029B7F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6414B027C578E60029B7F7 /* MainView.swift */; };
 		FB6414B327C578E70029B7F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6414B227C578E70029B7F7 /* Assets.xcassets */; };
 		FB6414B627C578E70029B7F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6414B527C578E70029B7F7 /* Preview Assets.xcassets */; };
+		FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB82E7D127C6BE9500E02BC4 /* Coordinator.swift */; };
+		FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */; };
+		FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC6B0227C6CE2C003E4A42 /* MainCoordinator.swift */; };
+		FBEC6B0527C6CE84003E4A42 /* MainViewCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC6B0427C6CE84003E4A42 /* MainViewCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		379F581327C6A8A000F315DD /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
-		379F581627C6B4D100F315DD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		37DBC4A027C6A6EB004770BE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		37DBC4A027C6A6EB004770BE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		37DBC4A327C6A793004770BE /* SharedTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTemp.swift; sourceTree = "<group>"; };
 		37DBC4A527C6A79E004770BE /* ModelTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTemp.swift; sourceTree = "<group>"; };
 		37DBC4A827C6A806004770BE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FB6414AB27C578E60029B7F7 /* Peptobismol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peptobismol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptobismolApp.swift; sourceTree = "<group>"; };
-		FB6414B027C578E60029B7F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB6414B027C578E60029B7F7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FB6414B227C578E70029B7F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6414B527C578E70029B7F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB82E7D127C6BE9500E02BC4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCreatorProtocol.swift; sourceTree = "<group>"; };
+		FBEC6B0227C6CE2C003E4A42 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		FBEC6B0427C6CE84003E4A42 /* MainViewCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,14 +52,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		379F581527C6B4AA00F315DD /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				379F581627C6B4D100F315DD /* MainCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
 		37DBC49B27C6A680004770BE /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				37DBC4A327C6A793004770BE /* SharedTemp.swift */,
+				FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -89,8 +90,9 @@
 		37DBC49F27C6A6A8004770BE /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FB6414B027C578E60029B7F7 /* ContentView.swift */,
-				37DBC4A027C6A6EB004770BE /* ContentViewModel.swift */,
+				FB6414B027C578E60029B7F7 /* MainView.swift */,
+				37DBC4A027C6A6EB004770BE /* MainViewModel.swift */,
+				FBEC6B0427C6CE84003E4A42 /* MainViewCreator.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -132,11 +134,11 @@
 		FB6414AD27C578E60029B7F7 /* Peptobismol */ = {
 			isa = PBXGroup;
 			children = (
-				379F581527C6B4AA00F315DD /* Coordinator */,
+				FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */,
+				FBEC6B0127C6CE20003E4A42 /* Coordinator */,
 				37DBC4A227C6A753004770BE /* Resources */,
 				37DBC49C27C6A68C004770BE /* Model */,
 				37DBC49B27C6A680004770BE /* View */,
-				FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */,
 			);
 			path = Peptobismol;
 			sourceTree = "<group>";
@@ -147,6 +149,15 @@
 				FB6414B527C578E70029B7F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBEC6B0127C6CE20003E4A42 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FB82E7D127C6BE9500E02BC4 /* Coordinator.swift */,
+				FBEC6B0227C6CE2C003E4A42 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,10 +234,14 @@
 				379F581727C6B4D100F315DD /* MainCoordinator.swift in Sources */,
 				37DBC4A927C6A806004770BE /* TimerView.swift in Sources */,
 				37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */,
+				FBEC6B0527C6CE84003E4A42 /* MainViewCreator.swift in Sources */,
+				FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */,
 				37DBC4A427C6A793004770BE /* SharedTemp.swift in Sources */,
-				FB6414B127C578E60029B7F7 /* ContentView.swift in Sources */,
+				FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */,
+				FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */,
+				FB6414B127C578E60029B7F7 /* MainView.swift in Sources */,
 				FB6414AF27C578E60029B7F7 /* PeptobismolApp.swift in Sources */,
-				37DBC4A127C6A6EB004770BE /* ContentViewModel.swift in Sources */,
+				37DBC4A127C6A6EB004770BE /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = Y7F52ZVSDT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -385,7 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = Y7F52ZVSDT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
