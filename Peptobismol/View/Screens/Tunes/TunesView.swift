@@ -31,7 +31,7 @@ struct TunesView: View {
                 }
                 
                 Section {
-                    ForEach(viewModel.tunes, id: \.id) { tune in
+                    ForEach(viewModel.tunes) { tune in
                         CheckButton(selectedTune: $viewModel.selectedTuneID, id: tune.id, text: tune.name)
                     }
                     ClassicButton(viewModel: viewModel)
