@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37880FB327C7EC9A000FD582 /* CheckButton.swift */; };
 		37880FB627C7FD10000FD582 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37880FB527C7FD10000FD582 /* StartButton.swift */; };
+		37880FB827C8038B000FD582 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37880FB727C8038B000FD582 /* CancelButton.swift */; };
 		379F581427C6A8A000F315DD /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581327C6A8A000F315DD /* TimerViewModel.swift */; };
 		379F581C27C6D72200F315DD /* TunesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581B27C6D72200F315DD /* TunesView.swift */; };
 		379F581E27C6D75A00F315DD /* TunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581D27C6D75A00F315DD /* TunesViewModel.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		37880FB327C7EC9A000FD582 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		37880FB527C7FD10000FD582 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		37880FB727C8038B000FD582 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
 		379F581327C6A8A000F315DD /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		379F581B27C6D72200F315DD /* TunesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesView.swift; sourceTree = "<group>"; };
 		379F581D27C6D75A00F315DD /* TunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				37DBC4A327C6A793004770BE /* SharedTemp.swift */,
 				FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */,
 				37880FB527C7FD10000FD582 /* StartButton.swift */,
+				37880FB727C8038B000FD582 /* CancelButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */,
 				FB6414B127C578E60029B7F7 /* MainView.swift in Sources */,
 				FB6414AF27C578E60029B7F7 /* PeptobismolApp.swift in Sources */,
+				37880FB827C8038B000FD582 /* CancelButton.swift in Sources */,
 				379F582627C711DE00F315DD /* ClassicsView.swift in Sources */,
 				37DBC4A127C6A6EB004770BE /* MainViewModel.swift in Sources */,
 				379F582327C6FD1800F315DD /* TuneModel.swift in Sources */,

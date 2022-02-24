@@ -16,6 +16,7 @@ enum TimeState: String {
 struct StartButton: View {
     
     @Binding var timeState: TimeState
+    var action: () -> Void
     
     var viewColor: Color {
         return timeState == .start ? .green : .orange
@@ -23,9 +24,7 @@ struct StartButton: View {
     
     var body: some View {
         ZStack {
-            Button {
-                
-            } label: {
+            Button(action: action) {
                 Image("CircleButton")
                     .resizable()
                     .frame(width: 80, height: 80)
@@ -41,7 +40,7 @@ struct StartButton: View {
 
 struct StartButton_Previews: PreviewProvider {
     static var previews: some View {
-        StartButton(timeState: Binding<TimeState>.constant(.start))
+        StartButton(timeState: Binding<TimeState>.constant(.start), action: {})
             .preferredColorScheme(.dark)
     }
 }
