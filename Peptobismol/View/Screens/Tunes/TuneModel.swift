@@ -8,46 +8,46 @@
 import Foundation
 
 struct TuneModel: Identifiable{
-    let id = UUID()
+    let id: Int
     let name: String
 }
 
 extension TuneModel{
     static func fetchTunes() -> [TuneModel] {
         return [
-            TuneModel(name: "Radar (Default)"),
-            TuneModel(name: "Apex"),
-            TuneModel(name: "Beacon"),
-            TuneModel(name: "Bulletin"),
-            TuneModel(name: "By The Seaside"),
-            TuneModel(name: "Chimes"),
-            TuneModel(name: "Circuit"),
-            TuneModel(name: "Constellation"),
-            TuneModel(name: "Cosmic"),
-            TuneModel(name: "Crystals"),
-            TuneModel(name: "Hillside"),
-            TuneModel(name: "Illumiate")
+            TuneModel(id: 0, name: "Radar (Default)"),
+            TuneModel(id: 1, name: "Apex"),
+            TuneModel(id: 2, name: "Beacon"),
+            TuneModel(id: 3, name: "Bulletin"),
+            TuneModel(id: 4, name: "By The Seaside"),
+            TuneModel(id: 5, name: "Chimes"),
+            TuneModel(id: 6, name: "Circuit"),
+            TuneModel(id: 7, name: "Constellation"),
+            TuneModel(id: 8, name: "Cosmic"),
+            TuneModel(id: 9, name: "Crystals"),
+            TuneModel(id: 10, name: "Hillside"),
+            TuneModel(id: 11, name: "Illumiate")
         ]
     }
     
     static func fetchClassicTunes() -> [TuneModel] {
         return [
-            TuneModel(name: "Alarm"),
-            TuneModel(name: "Ascending"),
-            TuneModel(name: "Bark"),
-            TuneModel(name: "Bell Tower"),
-            TuneModel(name: "Blues"),
-            TuneModel(name: "Boing"),
-            TuneModel(name: "Crickets"),
-            TuneModel(name: "Digital"),
-            TuneModel(name: "Doorbell"),
-            TuneModel(name: "Duck"),
-            TuneModel(name: "Harp"),
-            TuneModel(name: "Marimba"),
-            TuneModel(name: "Motorcycle"),
-            TuneModel(name: "Old Car Horn"),
-            TuneModel(name: "Old Phone"),
-            TuneModel(name: "Piano Riff")
+            TuneModel(id: 12, name: "Alarm"),
+            TuneModel(id: 13, name: "Ascending"),
+            TuneModel(id: 14, name: "Bark"),
+            TuneModel(id: 15, name: "Bell Tower"),
+            TuneModel(id: 16, name: "Blues"),
+            TuneModel(id: 17, name: "Boing"),
+            TuneModel(id: 18, name: "Crickets"),
+            TuneModel(id: 19, name: "Digital"),
+            TuneModel(id: 20, name: "Doorbell"),
+            TuneModel(id: 21, name: "Duck"),
+            TuneModel(id: 22, name: "Harp"),
+            TuneModel(id: 23, name: "Marimba"),
+            TuneModel(id: 24, name: "Motorcycle"),
+            TuneModel(id: 25, name: "Old Car Horn"),
+            TuneModel(id: 26, name: "Old Phone"),
+            TuneModel(id: 27, name: "Piano Riff")
         ]
     }
 }

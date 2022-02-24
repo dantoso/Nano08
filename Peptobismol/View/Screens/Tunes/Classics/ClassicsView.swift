@@ -14,7 +14,7 @@ struct ClassicsView: View {
     
     var body: some View {
         Form{
-            ForEach(viewModel.classicTunes) { tune in
+            ForEach(viewModel.classicTunes, id: \.id) { tune in
                 CheckButton(selectedTune: $viewModel.selectedTuneID, id: tune.id, text: tune.name)
             }
         }

@@ -31,7 +31,7 @@ struct TunesView: View {
                 }
                 
                 Section {
-                    ForEach(viewModel.tunes) { tune in
+                    ForEach(viewModel.tunes, id: \.id) { tune in
                         CheckButton(selectedTune: $viewModel.selectedTuneID, id: tune.id, text: tune.name)
                     }
                     ClassicButton(viewModel: viewModel)
@@ -77,32 +77,6 @@ struct TunesView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-
-struct CheckButton: View {
-    
-    @Binding var selectedTune: UUID
-    var id: UUID
-    var text: String
-    
-    var body: some View {
-        Button {
-            selectedTune = id
-        } label: {
-            ZStack{
-                HStack{
-                    Image(systemName: "checkmark")
-                        .font(.body.bold())
-                        .isHidden(selectedTune != id)
-                    Text(text)
-                        .padding(.leading, 10)
-                        .tint(Color(UIColor.label))
-                    Spacer()
-                }
-            }
-        }
-    }
-}
-
 
 struct ClassicButton: View {
     

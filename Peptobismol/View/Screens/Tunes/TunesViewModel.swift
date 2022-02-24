@@ -9,7 +9,7 @@ import SwiftUI
 
 class TunesViewModel: ObservableObject {
     
-    @Published var selectedTuneID: UUID!
+    @Published var selectedTuneID: Int!
     
     init(){
         setSelectedTuneID()
@@ -19,8 +19,7 @@ class TunesViewModel: ObservableObject {
     let classicTunes = TuneModel.fetchClassicTunes()
     
     func set(){
-        let tune = getSelectedTune()
-        UserDefaults.standard.set(tune.name, forKey: "SelectedTuneName")
+        UserDefaults.standard.set(selectedTuneID, forKey: "SelectedTuneID")
     }
     
     func isClassicSelected() -> Bool {
@@ -32,27 +31,7 @@ class TunesViewModel: ObservableObject {
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
-    private func getSelectedTune() -> TuneModel {
-        if let tune = tunes.first(where: { $0.id == selectedTuneID }) {
-            return tune
-        }
-        else if let classicTune = classicTunes.first(where: { $0.id == selectedTuneID }) {
-            return classicTune
-        }
-        return tunes[0]
-    }
-    
     private func setSelectedTuneID(){
-        if let savedTuneName = UserDefaults.standard.string(forKey: "SelectedTuneName") {
-            if let tuneID = tunes.first(where: { $0.name == savedTuneName })?.id {
-                selectedTuneID = tuneID
-            }
-            else if let classicTuneID  = classicTunes.first(where: { $0.name == savedTuneName })?.id {
-                selectedTuneID = classicTuneID
-            }
-        }
-        else{
-            selectedTuneID = tunes[0].id
-        }
+        selectedTuneID = UserDefaults.standard.integer(forKey: "SelectedTuneID")
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37880FB327C7EC9A000FD582 /* CheckButton.swift */; };
 		379F581427C6A8A000F315DD /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581327C6A8A000F315DD /* TimerViewModel.swift */; };
 		379F581C27C6D72200F315DD /* TunesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581B27C6D72200F315DD /* TunesView.swift */; };
 		379F581E27C6D75A00F315DD /* TunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581D27C6D75A00F315DD /* TunesViewModel.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37880FB327C7EC9A000FD582 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		379F581327C6A8A000F315DD /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		379F581B27C6D72200F315DD /* TunesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesView.swift; sourceTree = "<group>"; };
 		379F581D27C6D75A00F315DD /* TunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesViewModel.swift; sourceTree = "<group>"; };
@@ -60,9 +62,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37880FB127C7EC7D000FD582 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				37880FB327C7EC9A000FD582 /* CheckButton.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		379F581A27C6D63000F315DD /* Tunes */ = {
 			isa = PBXGroup;
 			children = (
+				37880FB127C7EC7D000FD582 /* Shared */,
 				379F582427C711C800F315DD /* Classics */,
 				379F581B27C6D72200F315DD /* TunesView.swift */,
 				379F581D27C6D75A00F315DD /* TunesViewModel.swift */,
@@ -275,6 +286,7 @@
 				FBEC6B0527C6CE84003E4A42 /* MainViewCreator.swift in Sources */,
 				FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */,
 				379F582127C6FB2400F315DD /* View+Modifiers.swift in Sources */,
+				37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */,
 				37DBC4A427C6A793004770BE /* SharedTemp.swift in Sources */,
 				FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */,
 				FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */,
