@@ -11,7 +11,7 @@ import SwiftUI
 struct PeptobismolApp: App {
     var body: some Scene {
         WindowGroup {
-			LoadCircle(timeLimit: 10)
+			LoadCircle(timeLimit: 3603)
 //            MainView()
 //				.environmentObject(MainCoordinator(creators: <#T##[ViewCreator]#>))
         }

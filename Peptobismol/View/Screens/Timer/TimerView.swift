@@ -26,7 +26,9 @@ struct LoadCircle: View {
 	
 	init(timeLimit: TimeInterval) {
 		self.timeLimit = timeLimit
-		self.updateInterval = timeLimit*0.01
+//      Vale a pena ter 2 timer counters?
+//		self.updateInterval = timeLimit*0.01
+        self.updateInterval = 0.1
 		self.timeLeft = timeLimit
 		self.timeCounter = Timer.publish(every: updateInterval, on: .main, in: .common)
 		let _ = timeCounter.connect()
@@ -37,7 +39,7 @@ struct LoadCircle: View {
 		ZStack {
 			
 			Text(timeFormatter())
-				.font(.system(size: 100, weight: .light))
+				.font(.system(size: 80, weight: .light))
 			
 			Circle()
 				.trim(from: 0, to: circlePercentage)
@@ -62,8 +64,23 @@ struct LoadCircle: View {
 	}
 	
 	func timeFormatter() -> String {
-		return "\(Int(timeLeft))"
+        var timer = ""
+        let currentTimeLeft = Int(timeLeft)
+        let hours = currentTimeLeft / 3600
+        let minutes = currentTimeLeft % 3600 / 60
+        let seconds = currentTimeLeft % 3600 % 60
+        
+        timer += hours > 0 ? validNumber(hours) + ":" : ""
+        timer += minutes > 0 ? validNumber(minutes) : "00"
+        timer += ":"
+        timer += seconds > 0 ? validNumber(seconds) : "00"
+    
+		return timer
 	}
+    
+    func validNumber(_ number: Int) -> String {
+        return number > 9 ? "\(number)" : "0\(number)"
+    }
 	
 }
 
