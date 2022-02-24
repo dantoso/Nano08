@@ -19,7 +19,7 @@ class TimerViewModel: ObservableObject{
 	
 	init(timeLimit: TimeInterval) {
 		self.timeLimit = timeLimit
-		self.updateInterval = timeLimit*0.01
+        self.updateInterval = 0.1
 		self.timeLeft = timeLimit
 		self.timeCounter = Timer.publish(every: updateInterval, on: .main, in: .common)
 		let _ = timeCounter.connect()

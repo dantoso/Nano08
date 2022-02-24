@@ -12,15 +12,7 @@ struct TimerView: View {
 	@ObservedObject var viewModel: TimerViewModel
 	
 	init(timeLimit: TimeInterval) {
-		self.timeLimit = timeLimit
-//      Vale a pena ter 2 timer counters?
-//		self.updateInterval = timeLimit*0.01
-        self.updateInterval = 0.1
-		self.timeLeft = timeLimit
-		self.timeCounter = Timer.publish(every: updateInterval, on: .main, in: .common)
-		let _ = timeCounter.connect()
 		viewModel = TimerViewModel(timeLimit: timeLimit)
-
 	}
 	
 	var body: some View {
@@ -46,9 +38,8 @@ struct TimerView: View {
 	}
 	
 	func timeFormatter() -> String {
-
         var timer = ""
-        let currentTimeLeft = Int(timeLeft)
+        let currentTimeLeft = Int(viewModel.timeLeft)
         let hours = currentTimeLeft / 3600
         let minutes = currentTimeLeft % 3600 / 60
         let seconds = currentTimeLeft % 3600 % 60
