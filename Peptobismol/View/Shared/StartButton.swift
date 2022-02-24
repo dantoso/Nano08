@@ -19,7 +19,7 @@ struct StartButton: View {
     var action: () -> Void
     
     var viewColor: Color {
-        return timeState == .start ? .green : .orange
+        return timeState == .start || timeState == .resume ? .green : .orange
     }
     
     var body: some View {
