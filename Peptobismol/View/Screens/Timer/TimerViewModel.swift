@@ -27,7 +27,10 @@ class TimerViewModel: ObservableObject{
 	
 	func update() {
 		guard isPlaying else {return}
-		guard circlePercentage != 0 else {return}
+		guard circlePercentage != 0 else {
+			isPlaying = false
+			return
+		}
 				
 		timeLeft -= updateInterval
 		let newPercentage = timeLeft/CGFloat(timeLimit)
