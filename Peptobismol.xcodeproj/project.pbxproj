@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		379F581427C6A8A000F315DD /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581327C6A8A000F315DD /* TimerViewModel.swift */; };
-		37DBC4A127C6A6EB004770BE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A027C6A6EB004770BE /* ContentViewModel.swift */; };
+		379F581C27C6D72200F315DD /* TunesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581B27C6D72200F315DD /* TunesView.swift */; };
+		379F581E27C6D75A00F315DD /* TunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581D27C6D75A00F315DD /* TunesViewModel.swift */; };
+		379F582127C6FB2400F315DD /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F582027C6FB2400F315DD /* View+Modifiers.swift */; };
+		379F582327C6FD1800F315DD /* TuneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F582227C6FD1800F315DD /* TuneModel.swift */; };
+		379F582627C711DE00F315DD /* ClassicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F582527C711DE00F315DD /* ClassicsView.swift */; };
 		37DBC4A127C6A6EB004770BE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A027C6A6EB004770BE /* MainViewModel.swift */; };
 		37DBC4A427C6A793004770BE /* SharedTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A327C6A793004770BE /* SharedTemp.swift */; };
 		37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A527C6A79E004770BE /* ModelTemp.swift */; };
@@ -25,7 +29,11 @@
 
 /* Begin PBXFileReference section */
 		379F581327C6A8A000F315DD /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
-		37DBC4A027C6A6EB004770BE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		379F581B27C6D72200F315DD /* TunesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesView.swift; sourceTree = "<group>"; };
+		379F581D27C6D75A00F315DD /* TunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesViewModel.swift; sourceTree = "<group>"; };
+		379F582027C6FB2400F315DD /* View+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
+		379F582227C6FD1800F315DD /* TuneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneModel.swift; sourceTree = "<group>"; };
+		379F582527C711DE00F315DD /* ClassicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicsView.swift; sourceTree = "<group>"; };
 		37DBC4A027C6A6EB004770BE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		37DBC4A327C6A793004770BE /* SharedTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTemp.swift; sourceTree = "<group>"; };
 		37DBC4A527C6A79E004770BE /* ModelTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTemp.swift; sourceTree = "<group>"; };
@@ -52,6 +60,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		379F581A27C6D63000F315DD /* Tunes */ = {
+			isa = PBXGroup;
+			children = (
+				379F582427C711C800F315DD /* Classics */,
+				379F581B27C6D72200F315DD /* TunesView.swift */,
+				379F581D27C6D75A00F315DD /* TunesViewModel.swift */,
+				379F582227C6FD1800F315DD /* TuneModel.swift */,
+			);
+			path = Tunes;
+			sourceTree = "<group>";
+		};
+		379F581F27C6FAFF00F315DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				379F582027C6FB2400F315DD /* View+Modifiers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		379F582427C711C800F315DD /* Classics */ = {
+			isa = PBXGroup;
+			children = (
+				379F582527C711DE00F315DD /* ClassicsView.swift */,
+			);
+			path = Classics;
+			sourceTree = "<group>";
+		};
 		37DBC49B27C6A680004770BE /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,7 @@
 		37DBC49E27C6A697004770BE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				379F581A27C6D63000F315DD /* Tunes */,
 				37DBC4A727C6A7EB004770BE /* Timer */,
 				37DBC49F27C6A6A8004770BE /* Main */,
 			);
@@ -134,6 +170,7 @@
 		FB6414AD27C578E60029B7F7 /* Peptobismol */ = {
 			isa = PBXGroup;
 			children = (
+				379F581F27C6FAFF00F315DD /* Extensions */,
 				FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */,
 				FBEC6B0127C6CE20003E4A42 /* Coordinator */,
 				37DBC4A227C6A753004770BE /* Resources */,
@@ -230,18 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379F581C27C6D72200F315DD /* TunesView.swift in Sources */,
 				379F581427C6A8A000F315DD /* TimerViewModel.swift in Sources */,
-				379F581727C6B4D100F315DD /* MainCoordinator.swift in Sources */,
 				37DBC4A927C6A806004770BE /* TimerView.swift in Sources */,
+				379F581E27C6D75A00F315DD /* TunesViewModel.swift in Sources */,
 				37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */,
 				FBEC6B0527C6CE84003E4A42 /* MainViewCreator.swift in Sources */,
 				FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */,
+				379F582127C6FB2400F315DD /* View+Modifiers.swift in Sources */,
 				37DBC4A427C6A793004770BE /* SharedTemp.swift in Sources */,
 				FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */,
 				FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */,
 				FB6414B127C578E60029B7F7 /* MainView.swift in Sources */,
 				FB6414AF27C578E60029B7F7 /* PeptobismolApp.swift in Sources */,
+				379F582627C711DE00F315DD /* ClassicsView.swift in Sources */,
 				37DBC4A127C6A6EB004770BE /* MainViewModel.swift in Sources */,
+				379F582327C6FD1800F315DD /* TuneModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = Y7F52ZVSDT;
+				DEVELOPMENT_TEAM = L6B3W3NNQ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -401,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = Y7F52ZVSDT;
+				DEVELOPMENT_TEAM = L6B3W3NNQ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

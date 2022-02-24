@@ -8,5 +8,5 @@
 import SwiftUI
 
 class MainViewModel: ObservableObject{
-    
+    @Published var presentTunesView = false
 }
