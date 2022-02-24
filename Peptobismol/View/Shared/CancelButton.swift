@@ -14,14 +14,18 @@ struct CancelButton: View {
     
     var body: some View {
         ZStack {
-            Button(action: action) {
+            Button {
+                if isEnabled {
+                    action()
+                }
+            } label: {
                 Image("CircleButton")
                     .resizable()
                     .frame(width: 90, height: 90)
                     .foregroundColor(.gray)
                     .opacity(0.2)
             }
-            
+
             Text("Cancel")
                 .foregroundColor(isEnabled ? .white : Color(uiColor: .tertiaryLabel))
         }
