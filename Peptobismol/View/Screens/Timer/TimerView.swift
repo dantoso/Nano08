@@ -10,7 +10,7 @@ import SwiftUI
 struct TimerView: View {
 	
 	@ObservedObject var viewModel: TimerViewModel
-	
+		
 	init(timeLimit: TimeInterval) {
 		viewModel = TimerViewModel(timeLimit: timeLimit)
 	}

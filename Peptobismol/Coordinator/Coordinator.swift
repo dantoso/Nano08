@@ -8,8 +8,8 @@
 import SwiftUI
 
 protocol Coordinator {
-	var creators: [ViewCreator] {get set}
-	
-	func start()
+//	var creators: [ViewCreator] {get set}
+//
+//	func start()
 }
 

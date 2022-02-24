@@ -13,7 +13,7 @@ struct PeptobismolApp: App {
         WindowGroup {
 //			TimerView(timeLimit: 3603)
             MainView()
-//				.environmentObject(MainCoordinator(creators: <#T##[ViewCreator]#>))
+				.environmentObject(MainCoordinator())
         }
     }
 }

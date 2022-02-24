@@ -10,46 +10,33 @@ import SwiftUI
 struct MainView: View {
 	
 	@ObservedObject var viewModel = MainViewModel()
-    
-    @State private var tempo: [Int] = [0, 0, 0]
-    @State private var isEnabled: Bool = false
-    @State private var timeState: TimeState = .start
-    @State private var timerEndsIsActive: Bool = false
+	@EnvironmentObject var coordinator: MainCoordinator
     
     private let hhmmss: [[Int]] = [[Int](0..<24), [Int](0..<60), [Int](0..<60)]
 	
     var body: some View {
         VStack {
-            ZStack {
-                MultiPicker(selections: self.$tempo, horas: hhmmss)
-                    .onReceive([self.tempo].publisher.first(), perform: {(value) in
-                        print(value)
-                    })
-                Text("h")
-                    .offset(x:-80, y:0)
-                    .font(.system(size: 20))
-                Text("m")
-                    .offset(x:25, y:0)
-                    .font(.system(size: 20))
-                Text("s")
-                    .offset(x:125, y:0)
-                    .font(.system(size: 20))
-            }
-            .padding(.vertical)
+            
+			if viewModel.isPresentingPickerView {
+				coordinator.createTimePickerView(tempo: $viewModel.tempo, hhmmss: hhmmss)
+			}
+			else {
+				coordinator.createTimerView(timeLimit: viewModel.tempo)
+			}
+			
             
             HStack {
-                CancelButton(isEnabled: $isEnabled, action: {
-                    print("cancelado")
+				CancelButton(isEnabled: $viewModel.isEnabled, action: {
+					viewModel.isEnabled = false
+					viewModel.isPresentingPickerView = true
                 })
                 Spacer()
-                StartButton(timeState: $timeState, action: {
-                    print("bacana")
-                })
+				StartButton(strategy: $viewModel.buttonState)
             }
             
             Form {
                 Button {
-                    timerEndsIsActive.toggle()
+					viewModel.timerEndsIsActive.toggle()
                 } label: {
                     HStack {
                         Text("When Timer Ends")
@@ -62,14 +49,13 @@ struct MainView: View {
                             .font(.body.bold())
                     }
                 }
-                .sheet(isPresented: $timerEndsIsActive, onDismiss: {viewModel.fetchTuneName()}) {
+				.sheet(isPresented: $viewModel.timerEndsIsActive, onDismiss: {viewModel.fetchTuneName()}) {
                     TunesView()
                 }
             }
         }
         .onAppear(perform: {viewModel.fetchTuneName()})
     }
-	
 }
 
 struct MainView_Previews: PreviewProvider {
