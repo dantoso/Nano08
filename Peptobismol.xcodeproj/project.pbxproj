@@ -18,6 +18,7 @@
 		37DBC4A427C6A793004770BE /* SharedTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A327C6A793004770BE /* SharedTemp.swift */; };
 		37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A527C6A79E004770BE /* ModelTemp.swift */; };
 		37DBC4A927C6A806004770BE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A827C6A806004770BE /* TimerView.swift */; };
+		8D1196D427C7F53C00017DAC /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1196D327C7F53C00017DAC /* MultiPicker.swift */; };
 		FB6414AF27C578E60029B7F7 /* PeptobismolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */; };
 		FB6414B127C578E60029B7F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6414B027C578E60029B7F7 /* MainView.swift */; };
 		FB6414B327C578E70029B7F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6414B227C578E70029B7F7 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		37DBC4A327C6A793004770BE /* SharedTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTemp.swift; sourceTree = "<group>"; };
 		37DBC4A527C6A79E004770BE /* ModelTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTemp.swift; sourceTree = "<group>"; };
 		37DBC4A827C6A806004770BE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		8D1196D327C7F53C00017DAC /* MultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
 		FB6414AB27C578E60029B7F7 /* Peptobismol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peptobismol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptobismolApp.swift; sourceTree = "<group>"; };
 		FB6414B027C578E60029B7F7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				37DBC4A327C6A793004770BE /* SharedTemp.swift */,
 				FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */,
+				8D1196D327C7F53C00017DAC /* MultiPicker.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */,
 				37DBC4A427C6A793004770BE /* SharedTemp.swift in Sources */,
 				FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */,
+				8D1196D427C7F53C00017DAC /* MultiPicker.swift in Sources */,
 				FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */,
 				FB6414B127C578E60029B7F7 /* MainView.swift in Sources */,
 				FB6414AF27C578E60029B7F7 /* PeptobismolApp.swift in Sources */,
