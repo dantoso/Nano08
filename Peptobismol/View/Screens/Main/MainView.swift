@@ -41,10 +41,12 @@ struct MainView: View {
                 CancelButton(isEnabled: $isEnabled, action: {
                     print("cancelado")
                 })
+                    .padding([.horizontal, .top])
                 Spacer()
                 StartButton(timeState: $timeState, action: {
                     print("bacana")
                 })
+                    .padding([.horizontal, .top])
             }
             
             Form {
@@ -62,12 +64,13 @@ struct MainView: View {
                             .font(.body.bold())
                     }
                 }
-                .sheet(isPresented: $timerEndsIsActive, onDismiss: {viewModel.fetchTuneName()}) {
+                .sheet(isPresented: $timerEndsIsActive, onDismiss: {viewModel.fetchTuneNameOptimized()}) {
                     TunesView()
                 }
+                .padding(.vertical, 10)
             }
         }
-        .onAppear(perform: {viewModel.fetchTuneName()})
+        .onAppear(perform: {viewModel.fetchTuneNameOptimized()})
     }
 	
 }

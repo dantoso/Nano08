@@ -20,4 +20,31 @@ class MainViewModel: ObservableObject{
         
         activeTune = tuneFetched.name
     }
+    
+    func fetchTuneNameOptimized() {
+        let tuneID = UserDefaults.standard.integer(forKey: "SelectedTuneID")
+        var tunes: [TuneModel] = TuneModel.fetchTunes()
+        tunes.append(contentsOf: TuneModel.fetchClassicTunes())
+        
+        var ini = 0
+        var fim = tunes.count - 1
+        var meio: Int
+        var resposta = ""
+        
+        while (ini <= fim) {
+            meio = (ini + fim) / 2
+            if (tuneID == tunes[meio].id) {
+                resposta = tunes[meio].name
+                break
+            }
+            if (tuneID < tunes[meio].id) {
+                fim = meio - 1
+            }
+            else {
+                ini = meio + 1
+            }
+        }
+        
+        activeTune = resposta
+    }
 }
