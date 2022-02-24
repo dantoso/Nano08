@@ -16,17 +16,29 @@ struct TimerView: View {
 struct LoadCircle: View {
 	
 	let timeLimit: TimeInterval
-	var updateInterval: TimeInterval {timeLimit*0.001}
+	let updateInterval: CGFloat
 	
 	// TODO: botar na view model depois
 	@State var isPlaying = true
-	@State var timeElapsed: CGFloat = 0
+	@State var timeLeft: CGFloat
 	@State var circlePercentage: CGFloat = 1
-	@State var timeCounter = Timer.publish(every: 1, on: .main, in: .common)
+	@State var timeCounter: Timer.TimerPublisher
+	
+	init(timeLimit: TimeInterval) {
+		self.timeLimit = timeLimit
+		self.updateInterval = timeLimit*0.01
+		self.timeLeft = timeLimit
+		self.timeCounter = Timer.publish(every: updateInterval, on: .main, in: .common)
+		let _ = timeCounter.connect()
+	}
 	
 	var body: some View {
 		
 		ZStack {
+			
+			Text(timeFormatter())
+				.font(.system(size: 100, weight: .light))
+			
 			Circle()
 				.trim(from: 0, to: circlePercentage)
 				.stroke(Color.orange, style: StrokeStyle(lineWidth: 5, lineCap: .round))
@@ -38,14 +50,25 @@ struct LoadCircle: View {
 		}
 		.onReceive(timeCounter) { _ in
 			guard isPlaying else {return}
-			// update ui
+			guard circlePercentage != 0 else {return}
+			
+			timeLeft -= updateInterval
+			let newPercentage = timeLeft/CGFloat(timeLimit)
+			withAnimation {
+				circlePercentage = newPercentage
+			}
 		}
 		
 	}
+	
+	func timeFormatter() -> String {
+		return "\(Int(timeLeft))"
+	}
+	
 }
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        LoadCircle(timeLimit: 60)
+        LoadCircle(timeLimit: 30)
     }
 }
