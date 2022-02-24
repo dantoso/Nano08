@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct TimerView: View {
+    @State var currentDate = Date()
+    
+    //common: Deixa o processo em loop
+    //autonnect: Se conecta automaticamente ao seu editor conectável upstream.
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(currentDate)")
+            .onReceive(timer) { input in
+                currentDate = input
+            }
     }
 }
 
