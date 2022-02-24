@@ -27,7 +27,7 @@ struct StartButton: View {
             Button(action: action) {
                 Image("CircleButton")
                     .resizable()
-                    .frame(width: 80, height: 80)
+                    .frame(width: 90, height: 90)
                     .foregroundColor(viewColor)
                     .opacity(0.2)
             }

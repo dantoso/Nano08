@@ -17,7 +17,7 @@ struct CancelButton: View {
             Button(action: action) {
                 Image("CircleButton")
                     .resizable()
-                    .frame(width: 80, height: 80)
+                    .frame(width: 90, height: 90)
                     .foregroundColor(.gray)
                     .opacity(0.2)
             }
