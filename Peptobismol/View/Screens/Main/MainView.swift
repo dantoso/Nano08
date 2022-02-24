@@ -10,19 +10,37 @@ import SwiftUI
 struct MainView: View {
 	
 	@ObservedObject var viewModel = MainViewModel()
+    
+    @State private var tempo: [Int] = [0, 0, 0]
+    
+    private let hhmmss: [[Int]] = [[Int](0..<24), [Int](0..<60), [Int](0..<60)]
 	
     var body: some View {
-		Text("dadada")
+        VStack {
+            ZStack {
+                MultiPicker(selections: self.$tempo, horas: hhmmss)
+                    .onReceive([self.tempo].publisher.first(), perform: {(value) in
+                        print(value)
+                    })
+                Text("h")
+                    .offset(x:-80, y:0)
+                    .font(.system(size: 20))
+                Text("m")
+                    .offset(x:25, y:0)
+                    .font(.system(size: 20))
+                Text("s")
+                    .offset(x:125, y:0)
+                    .font(.system(size: 20))
+            }
+        }
     }
 	
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            MainView()
-                .preferredColorScheme(.dark)
-        }
+        MainView()
+            .preferredColorScheme(.dark)
     }
 }
 
