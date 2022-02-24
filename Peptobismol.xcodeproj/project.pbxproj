@@ -27,6 +27,7 @@
 		FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */; };
 		FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC6B0227C6CE2C003E4A42 /* MainCoordinator.swift */; };
 		FBEC6B0527C6CE84003E4A42 /* MainViewCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC6B0427C6CE84003E4A42 /* MainViewCreator.swift */; };
+		FBEC6B0827C6D554003E4A42 /* TimerViewCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC6B0727C6D554003E4A42 /* TimerViewCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCreatorProtocol.swift; sourceTree = "<group>"; };
 		FBEC6B0227C6CE2C003E4A42 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FBEC6B0427C6CE84003E4A42 /* MainViewCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCreator.swift; sourceTree = "<group>"; };
+		FBEC6B0727C6D554003E4A42 /* TimerViewCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewCreator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				37DBC4A827C6A806004770BE /* TimerView.swift */,
 				379F581327C6A8A000F315DD /* TimerViewModel.swift */,
+				FBEC6B0727C6D554003E4A42 /* TimerViewCreator.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */,
 				379F582127C6FB2400F315DD /* View+Modifiers.swift in Sources */,
 				37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */,
+                FBEC6B0827C6D554003E4A42 /* TimerViewCreator.swift in Sources */,
 				FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */,
 				FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */,
 				FB6414B127C578E60029B7F7 /* MainView.swift in Sources */,

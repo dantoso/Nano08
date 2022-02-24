@@ -24,8 +24,8 @@ final class MainCoordinator: ObservableObject, Coordinator {
 //	func createSoundPickerView() -> AnyView {
 //
 //	}
-//	
-//	func createTimerView() -> AnyView {
+//
+//	func createTimerView(timeLimit: TimeInterval) -> AnyView {
 //
 //	}
 //
