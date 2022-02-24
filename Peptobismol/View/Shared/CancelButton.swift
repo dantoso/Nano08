@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct CancelButton: View {
+    
+    @Binding var isEnabled: Bool
+    var action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Button(action: action) {
+                Image("CircleButton")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.gray)
+                    .opacity(0.2)
+            }
+            
+            Text("Cancel")
+                .foregroundColor(isEnabled ? .white : Color(uiColor: .tertiaryLabel))
+        }
     }
 }
 
 struct CancelButton_Previews: PreviewProvider {
     static var previews: some View {
-        CancelButton()
+        CancelButton(isEnabled: Binding<Bool>.constant(false), action: {})
+            .preferredColorScheme(.dark)
     }
 }
