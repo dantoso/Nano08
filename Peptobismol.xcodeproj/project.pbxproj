@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37880FB327C7EC9A000FD582 /* CheckButton.swift */; };
+		37880FB627C7FD10000FD582 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37880FB527C7FD10000FD582 /* StartButton.swift */; };
 		379F581427C6A8A000F315DD /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581327C6A8A000F315DD /* TimerViewModel.swift */; };
 		379F581C27C6D72200F315DD /* TunesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581B27C6D72200F315DD /* TunesView.swift */; };
 		379F581E27C6D75A00F315DD /* TunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F581D27C6D75A00F315DD /* TunesViewModel.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		37880FB327C7EC9A000FD582 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		37880FB527C7FD10000FD582 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		379F581327C6A8A000F315DD /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		379F581B27C6D72200F315DD /* TunesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesView.swift; sourceTree = "<group>"; };
 		379F581D27C6D75A00F315DD /* TunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunesViewModel.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				37DBC4A327C6A793004770BE /* SharedTemp.swift */,
 				FB82E7D327C6C80000E02BC4 /* ViewCreatorProtocol.swift */,
+				37880FB527C7FD10000FD582 /* StartButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				379F581E27C6D75A00F315DD /* TunesViewModel.swift in Sources */,
 				37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */,
 				FBEC6B0527C6CE84003E4A42 /* MainViewCreator.swift in Sources */,
+				37880FB627C7FD10000FD582 /* StartButton.swift in Sources */,
 				FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */,
 				379F582127C6FB2400F315DD /* View+Modifiers.swift in Sources */,
 				37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */,
