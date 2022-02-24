@@ -11,8 +11,8 @@ import SwiftUI
 struct PeptobismolApp: App {
     var body: some Scene {
         WindowGroup {
-			TimerView(timeLimit: 3603)
-//            MainView()
+//			TimerView(timeLimit: 3603)
+            MainView()
 //				.environmentObject(MainCoordinator(creators: <#T##[ViewCreator]#>))
         }
     }

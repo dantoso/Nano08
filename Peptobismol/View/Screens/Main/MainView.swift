@@ -12,6 +12,9 @@ struct MainView: View {
 	@ObservedObject var viewModel = MainViewModel()
     
     @State private var tempo: [Int] = [0, 0, 0]
+    @State private var isEnabled: Bool = false
+    @State private var timeState: TimeState = .start
+    @State private var timerEndsIsActive: Bool = false
     
     private let hhmmss: [[Int]] = [[Int](0..<24), [Int](0..<60), [Int](0..<60)]
 	
@@ -32,7 +35,39 @@ struct MainView: View {
                     .offset(x:125, y:0)
                     .font(.system(size: 20))
             }
+            .padding(.vertical)
+            
+            HStack {
+                CancelButton(isEnabled: $isEnabled, action: {
+                    print("cancelado")
+                })
+                Spacer()
+                StartButton(timeState: $timeState, action: {
+                    print("bacana")
+                })
+            }
+            
+            Form {
+                Button {
+                    timerEndsIsActive.toggle()
+                } label: {
+                    HStack {
+                        Text("When Timer Ends")
+                            .foregroundColor(.white)
+                        Spacer()
+                        Text(viewModel.activeTune)
+                            .foregroundColor(.gray)
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(.gray)
+                            .font(.body.bold())
+                    }
+                }
+                .sheet(isPresented: $timerEndsIsActive, onDismiss: {viewModel.fetchTuneName()}) {
+                    TunesView()
+                }
+            }
         }
+        .onAppear(perform: {viewModel.fetchTuneName()})
     }
 	
 }
