@@ -17,7 +17,6 @@
 		379F582327C6FD1800F315DD /* TuneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F582227C6FD1800F315DD /* TuneModel.swift */; };
 		379F582627C711DE00F315DD /* ClassicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379F582527C711DE00F315DD /* ClassicsView.swift */; };
 		37DBC4A127C6A6EB004770BE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A027C6A6EB004770BE /* MainViewModel.swift */; };
-		37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A527C6A79E004770BE /* ModelTemp.swift */; };
 		37DBC4A927C6A806004770BE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DBC4A827C6A806004770BE /* TimerView.swift */; };
 		FB6414AF27C578E60029B7F7 /* PeptobismolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */; };
 		FB6414B127C578E60029B7F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6414B027C578E60029B7F7 /* MainView.swift */; };
@@ -41,7 +40,6 @@
 		379F582227C6FD1800F315DD /* TuneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneModel.swift; sourceTree = "<group>"; };
 		379F582527C711DE00F315DD /* ClassicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicsView.swift; sourceTree = "<group>"; };
 		37DBC4A027C6A6EB004770BE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		37DBC4A527C6A79E004770BE /* ModelTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTemp.swift; sourceTree = "<group>"; };
 		37DBC4A827C6A806004770BE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FB6414AB27C578E60029B7F7 /* Peptobismol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peptobismol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptobismolApp.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		37DBC49C27C6A68C004770BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				37DBC4A527C6A79E004770BE /* ModelTemp.swift */,
 				379F582227C6FD1800F315DD /* TuneModel.swift */,
 			);
 			path = Model;
@@ -288,13 +285,12 @@
 				379F581427C6A8A000F315DD /* TimerViewModel.swift in Sources */,
 				37DBC4A927C6A806004770BE /* TimerView.swift in Sources */,
 				379F581E27C6D75A00F315DD /* TunesViewModel.swift in Sources */,
-				37DBC4A627C6A79E004770BE /* ModelTemp.swift in Sources */,
 				FBEC6B0527C6CE84003E4A42 /* MainViewCreator.swift in Sources */,
 				37880FB627C7FD10000FD582 /* StartButton.swift in Sources */,
 				FBEC6B0327C6CE2C003E4A42 /* MainCoordinator.swift in Sources */,
 				379F582127C6FB2400F315DD /* View+Modifiers.swift in Sources */,
 				37880FB427C7EC9A000FD582 /* CheckButton.swift in Sources */,
-                FBEC6B0827C6D554003E4A42 /* TimerViewCreator.swift in Sources */,
+				FBEC6B0827C6D554003E4A42 /* TimerViewCreator.swift in Sources */,
 				FB82E7D427C6C80000E02BC4 /* ViewCreatorProtocol.swift in Sources */,
 				FB82E7D227C6BE9500E02BC4 /* Coordinator.swift in Sources */,
 				FB6414B127C578E60029B7F7 /* MainView.swift in Sources */,
