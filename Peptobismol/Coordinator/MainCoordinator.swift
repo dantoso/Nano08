@@ -7,15 +7,18 @@
 import SwiftUI
 
 final class MainCoordinator: ObservableObject, Coordinator {
-	var creators: [ViewCreator]
 
-	init(creators: [ViewCreator]) {
-		self.creators = creators
-	}
-	
-	func start() {
-		
-	}
+    let timerViewModel: TimerViewModel
+    
+    init(_ timerViewModel: TimerViewModel) {
+        self.timerViewModel = timerViewModel
+    }
+    
+    //	var creators: [ViewCreator]
+//
+//	init(creators: [ViewCreator]) {
+//		self.creators = creators
+//	}
 	
 //	func createMainView() -> AnyView {
 //
@@ -24,13 +27,23 @@ final class MainCoordinator: ObservableObject, Coordinator {
 //	func createSoundPickerView() -> AnyView {
 //
 //	}
-//
-//	func createTimerView(timeLimit: TimeInterval) -> AnyView {
-//
-//	}
-//
-//	func createTimePickerView() -> AnyView {
-//
-//	}
+
+	func createTimerView(timeLimit: [Int]) -> AnyView {
+		
+		var seconds: TimeInterval = 0
+		
+		seconds += TimeInterval(timeLimit[0] * 3600)
+		seconds += TimeInterval(timeLimit[1] * 60)
+		seconds += TimeInterval(timeLimit[2])
+		
+        UserDefaults.standard.set(seconds, forKey: "secondsKey")
+        timerViewModel.reinit()
+        
+        return AnyView(TimerView())
+	}
+
+	func createTimePickerView(tempo: Binding<[Int]>, hhmmss: [[Int]]) -> AnyView {
+		return AnyView(TimePickerView(tempo: tempo, hhmmss: hhmmss))
+	}
 	
 }

@@ -27,3 +27,15 @@ extension View{
         modifier(HiddenModifier(hidden: hidden))
     }
 }
+
+
+extension NSNotification.Name {
+	
+	static let timerFinished = Notification.Name("timerFinished")
+	static let resumeBtnTap = Notification.Name("resumeBtnTap")
+	static let pauseBtnTap = Notification.Name("pauseBtnTap")
+	static let cancelBtnTap = Notification.Name("cancelBtnTap")
+	static let startBtnTap = Notification.Name("startBtnTap")
+	
+
+}
