@@ -45,7 +45,7 @@
 		8D1196D327C7F53C00017DAC /* MultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
 		FB60CA5B27C829C6000F80C4 /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		FB60CA5D27C8361D000F80C4 /* ButtonStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStrategy.swift; sourceTree = "<group>"; };
-		FB6414AB27C578E60029B7F7 /* Peptobismol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peptobismol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6414AB27C578E60029B7F7 /* PeptobisTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeptobisTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6414AE27C578E60029B7F7 /* PeptobismolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeptobismolApp.swift; sourceTree = "<group>"; };
 		FB6414B027C578E60029B7F7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FB6414B227C578E70029B7F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		FB6414AC27C578E60029B7F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB6414AB27C578E60029B7F7 /* Peptobismol.app */,
+				FB6414AB27C578E60029B7F7 /* PeptobisTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			);
 			name = Peptobismol;
 			productName = Peptobismol;
-			productReference = FB6414AB27C578E60029B7F7 /* Peptobismol.app */;
+			productReference = FB6414AB27C578E60029B7F7 /* PeptobisTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -433,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = L6B3W3NNQ3;
+				DEVELOPMENT_TEAM = Y7F52ZVSDT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -447,7 +447,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu-ne.Peptobismol";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PeptobisTimer;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Peptobismol/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = L6B3W3NNQ3;
+				DEVELOPMENT_TEAM = Y7F52ZVSDT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -476,7 +476,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu-ne.Peptobismol";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PeptobisTimer;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
