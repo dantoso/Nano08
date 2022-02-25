@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB6414AA27C578E60029B7F7"
-               BuildableName = "Peptobismol.app"
-               BlueprintName = "Peptobismol"
-               ReferencedContainer = "container:Peptobismol.xcodeproj">
+               BuildableName = "PeptobisTimer.app"
+               BlueprintName = "PeptobisTimer"
+               ReferencedContainer = "container:PeptobisTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB6414AA27C578E60029B7F7"
-            BuildableName = "Peptobismol.app"
-            BlueprintName = "Peptobismol"
-            ReferencedContainer = "container:Peptobismol.xcodeproj">
+            BuildableName = "PeptobisTimer.app"
+            BlueprintName = "PeptobisTimer"
+            ReferencedContainer = "container:PeptobisTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB6414AA27C578E60029B7F7"
-            BuildableName = "Peptobismol.app"
-            BlueprintName = "Peptobismol"
-            ReferencedContainer = "container:Peptobismol.xcodeproj">
+            BuildableName = "PeptobisTimer.app"
+            BlueprintName = "PeptobisTimer"
+            ReferencedContainer = "container:PeptobisTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

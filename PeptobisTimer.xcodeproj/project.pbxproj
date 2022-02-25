@@ -217,9 +217,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB6414AA27C578E60029B7F7 /* Peptobismol */ = {
+		FB6414AA27C578E60029B7F7 /* PeptobisTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB6414B927C578E70029B7F7 /* Build configuration list for PBXNativeTarget "Peptobismol" */;
+			buildConfigurationList = FB6414B927C578E70029B7F7 /* Build configuration list for PBXNativeTarget "PeptobisTimer" */;
 			buildPhases = (
 				FB6414A727C578E60029B7F7 /* Sources */,
 				FB6414A827C578E60029B7F7 /* Frameworks */,
@@ -229,7 +229,7 @@
 			);
 			dependencies = (
 			);
-			name = Peptobismol;
+			name = PeptobisTimer;
 			productName = Peptobismol;
 			productReference = FB6414AB27C578E60029B7F7 /* PeptobisTimer.app */;
 			productType = "com.apple.product-type.application";
@@ -249,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB6414A627C578E60029B7F7 /* Build configuration list for PBXProject "Peptobismol" */;
+			buildConfigurationList = FB6414A627C578E60029B7F7 /* Build configuration list for PBXProject "PeptobisTimer" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,7 +262,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB6414AA27C578E60029B7F7 /* Peptobismol */,
+				FB6414AA27C578E60029B7F7 /* PeptobisTimer */,
 			);
 		};
 /* End PBXProject section */
@@ -486,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB6414A627C578E60029B7F7 /* Build configuration list for PBXProject "Peptobismol" */ = {
+		FB6414A627C578E60029B7F7 /* Build configuration list for PBXProject "PeptobisTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB6414B727C578E70029B7F7 /* Debug */,
@@ -495,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB6414B927C578E70029B7F7 /* Build configuration list for PBXNativeTarget "Peptobismol" */ = {
+		FB6414B927C578E70029B7F7 /* Build configuration list for PBXNativeTarget "PeptobisTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB6414BA27C578E70029B7F7 /* Debug */,
