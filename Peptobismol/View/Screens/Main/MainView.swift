@@ -52,7 +52,7 @@ struct MainView: View {
                     }
                 }
 				.sheet(isPresented: $viewModel.timerEndsIsActive, onDismiss: {viewModel.fetchTuneNameOptimized()}) {
-                    TunesView()
+					coordinator.createTunesView()
                 }
                 .padding(.vertical, 10)
             }

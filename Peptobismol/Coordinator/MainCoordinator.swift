@@ -23,10 +23,10 @@ final class MainCoordinator: ObservableObject, Coordinator {
 //	func createMainView() -> AnyView {
 //
 //	}
-//
-//	func createSoundPickerView() -> AnyView {
-//
-//	}
+
+	func createTunesView() -> AnyView {
+		return AnyView(TunesView())
+	}
 
 	func createTimerView(timeLimit: [Int]) -> AnyView {
 		
