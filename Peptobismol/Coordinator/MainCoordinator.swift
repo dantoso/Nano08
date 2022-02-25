@@ -7,7 +7,14 @@
 import SwiftUI
 
 final class MainCoordinator: ObservableObject, Coordinator {
-//	var creators: [ViewCreator]
+
+    let timerViewModel: TimerViewModel
+    
+    init(_ timerViewModel: TimerViewModel) {
+        self.timerViewModel = timerViewModel
+    }
+    
+    //	var creators: [ViewCreator]
 //
 //	init(creators: [ViewCreator]) {
 //		self.creators = creators
@@ -29,8 +36,10 @@ final class MainCoordinator: ObservableObject, Coordinator {
 		seconds += TimeInterval(timeLimit[1] * 60)
 		seconds += TimeInterval(timeLimit[2])
 		
-		return AnyView(TimerView(timeLimit: seconds))
-				
+        UserDefaults.standard.set(seconds, forKey: "secondsKey")
+        timerViewModel.reinit()
+        
+        return AnyView(TimerView())
 	}
 
 	func createTimePickerView(tempo: Binding<[Int]>, hhmmss: [[Int]]) -> AnyView {

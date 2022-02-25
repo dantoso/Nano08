@@ -12,8 +12,14 @@ struct PeptobismolApp: App {
     var body: some Scene {
         WindowGroup {
 //			TimerView(timeLimit: 3603)
+            
+            let timerViewModel = TimerViewModel()
+            
             MainView()
-				.environmentObject(MainCoordinator())
+                .preferredColorScheme(.dark)
+				.environmentObject(MainCoordinator(timerViewModel))
+                .environmentObject(timerViewModel)
         }
     }
 }
+

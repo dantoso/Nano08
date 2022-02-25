@@ -37,12 +37,13 @@ class MainViewModel: ObservableObject{
 	
 	func createObservers() {
 		NotificationCenter.default.addObserver(forName: .startBtnTap, object: nil, queue: nil) { [weak self] _ in
-			self?.isPresentingPickerView = false
+            self?.isPresentingPickerView = false
 			self?.buttonState = PauseState()
 			self?.isEnabled = true
 		}
 		
 		NotificationCenter.default.addObserver(forName: .cancelBtnTap, object: nil, queue: nil) { [weak self] _ in
+            print("VO TI DIZER QUI U CANCEL TA RODANDU")
 			self?.buttonState = StartState()
 			self?.isPresentingPickerView = true
 			self?.isEnabled = false

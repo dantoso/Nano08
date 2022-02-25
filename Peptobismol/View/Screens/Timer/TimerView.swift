@@ -9,11 +9,7 @@ import SwiftUI
 
 struct TimerView: View {
 	
-	@ObservedObject var viewModel: TimerViewModel
-		
-	init(timeLimit: TimeInterval) {
-		viewModel = TimerViewModel(timeLimit: timeLimit)
-	}
+	@EnvironmentObject var viewModel: TimerViewModel
 	
 	var body: some View {
 		
@@ -58,8 +54,8 @@ struct TimerView: View {
 	
 }
 
-struct TimerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerView(timeLimit: 30)
-    }
-}
+//struct TimerView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        TimerView(timeLimit: 30)
+//    }
+//}

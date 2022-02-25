@@ -27,8 +27,8 @@ struct MainView: View {
             
             HStack {
 				CancelButton(isEnabled: $viewModel.isEnabled, action: {
-					viewModel.isEnabled = false
-					viewModel.isPresentingPickerView = true
+                    NotificationCenter.default.post(name: .cancelBtnTap, object: nil)
+					
                 })
                 Spacer()
 				StartButton(strategy: $viewModel.buttonState)
