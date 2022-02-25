@@ -14,7 +14,7 @@ class MainViewModel: ObservableObject{
     @Published var activeTune: String = ""
 	@Published var tempo: [Int] = [0, 0, 0]
 	@Published var isEnabled: Bool = false
-	@Published var buttonState: ButtonStrategy = StartState()
+	@Published var buttonState: ButtonStrategy = Start()
 	@Published var timerEndsIsActive: Bool = false
     
 	init() {
@@ -65,28 +65,28 @@ class MainViewModel: ObservableObject{
 	func createObservers() {
 		NotificationCenter.default.addObserver(forName: .startBtnTap, object: nil, queue: nil) { [weak self] _ in
             self?.isPresentingPickerView = false
-			self?.buttonState = PauseState()
+			self?.buttonState = Pause()
 			self?.isEnabled = true
 		}
 		
 		NotificationCenter.default.addObserver(forName: .cancelBtnTap, object: nil, queue: nil) { [weak self] _ in
             print("VO TI DIZER QUI U CANCEL TA RODANDU")
-			self?.buttonState = StartState()
+			self?.buttonState = Start()
 			self?.isPresentingPickerView = true
 			self?.isEnabled = false
 		}
 		
 		NotificationCenter.default.addObserver(forName: .timerFinished, object: nil, queue: nil) { [weak self] _ in
-			self?.buttonState = StartState()
+			self?.buttonState = Start()
 			self?.isPresentingPickerView = true
 			self?.isEnabled = false
 		}
 		NotificationCenter.default.addObserver(forName: .pauseBtnTap, object: nil, queue: nil) { [weak self] _ in
-			self?.buttonState = ResumeState()
+			self?.buttonState = Resume()
 		}
 		
 		NotificationCenter.default.addObserver(forName: .resumeBtnTap, object: nil, queue: nil) { [weak self] _ in
-			self?.buttonState = PauseState()
+			self?.buttonState = Pause()
 		}
 	}
 }

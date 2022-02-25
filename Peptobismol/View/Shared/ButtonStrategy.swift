@@ -13,7 +13,7 @@ protocol ButtonStrategy {
 	func action()
 }
 
-struct ResumeState: ButtonStrategy {
+struct Resume: ButtonStrategy {
 	var name: String {"Resume"}
 	var color: Color {.green}
 	
@@ -22,7 +22,7 @@ struct ResumeState: ButtonStrategy {
 	}
 }
 
-struct PauseState: ButtonStrategy {
+struct Pause: ButtonStrategy {
 	var name: String {"Pause"}
 	var color: Color {.orange}
 	
@@ -31,7 +31,7 @@ struct PauseState: ButtonStrategy {
 	}
 }
 
-struct StartState: ButtonStrategy {
+struct Start: ButtonStrategy {
 	var name: String {"Start"}
 	var color: Color {.green}
 	
