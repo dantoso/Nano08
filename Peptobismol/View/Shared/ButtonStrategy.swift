@@ -15,7 +15,6 @@ protocol ButtonStrategy {
 
 struct ResumeState: ButtonStrategy {
 	var name: String {"Resume"}
-	
 	var color: Color {.green}
 	
 	func action() {
@@ -25,7 +24,6 @@ struct ResumeState: ButtonStrategy {
 
 struct PauseState: ButtonStrategy {
 	var name: String {"Pause"}
-	
 	var color: Color {.orange}
 	
 	func action() {

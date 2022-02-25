@@ -14,8 +14,7 @@ struct TimerView: View {
 	var body: some View {
 		
 		ZStack {
-			
-			Text(timeFormatter())
+			Text(viewModel.timeFormatter())
 				.font(.system(size: 80, weight: .light))
 			
 			Circle()
@@ -32,25 +31,6 @@ struct TimerView: View {
 		}
 		
 	}
-	
-	func timeFormatter() -> String {
-        var timer = ""
-        let currentTimeLeft = Int(viewModel.timeLeft)
-        let hours = currentTimeLeft / 3600
-        let minutes = currentTimeLeft % 3600 / 60
-        let seconds = currentTimeLeft % 3600 % 60
-        
-        timer += hours > 0 ? validNumber(hours) + ":" : ""
-        timer += minutes > 0 ? validNumber(minutes) : "00"
-        timer += ":"
-        timer += seconds > 0 ? validNumber(seconds) : "00"
-    
-		return timer
-	}
-    
-    func validNumber(_ number: Int) -> String {
-        return number > 9 ? "\(number)" : "0\(number)"
-    }
 	
 }
 

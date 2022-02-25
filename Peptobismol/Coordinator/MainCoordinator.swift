@@ -24,11 +24,12 @@ final class MainCoordinator: ObservableObject, Coordinator {
 //
 //	}
 
-	func createTunesView() -> AnyView {
-		return AnyView(TunesView())
+	func createTunesView() -> some View {
+		return TunesView()
 	}
 
-	func createTimerView(timeLimit: [Int]) -> AnyView {
+	
+	func createTimerView(timeLimit: [Int]) -> some View {
 		
 		var seconds: TimeInterval = 0
 		
@@ -39,11 +40,11 @@ final class MainCoordinator: ObservableObject, Coordinator {
         UserDefaults.standard.set(seconds, forKey: "secondsKey")
         timerViewModel.reinit()
         
-        return AnyView(TimerView())
+        return TimerView()
 	}
 
-	func createTimePickerView(tempo: Binding<[Int]>, hhmmss: [[Int]]) -> AnyView {
-		return AnyView(TimePickerView(tempo: tempo, hhmmss: hhmmss))
+	func createTimePickerView(tempo: Binding<[Int]>, hhmmss: [[Int]]) -> some View {
+		return TimePickerView(tempo: tempo, hhmmss: hhmmss)
 	}
 	
 }
